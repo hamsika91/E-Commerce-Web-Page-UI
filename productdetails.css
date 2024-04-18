@@ -1,0 +1,302 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700;800&display=swap');
+
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+}
+body{
+    line-height: 1.5;
+    background-color: black;
+}
+.logo{
+    width: 30vh;
+    padding-left: 1vh;
+    color: white;
+    float:left;
+}
+nav{
+    width:100%;
+    height:85px;
+}
+nav li{
+    float :left;
+    list-style: none;
+    padding:14px;
+   
+}
+nav ul li{
+    position: relative;
+    margin-top: 20px;
+}
+nav li a{
+    text-decoration: none;
+    color: aliceblue;
+   
+}
+nav ul li a{
+    display:block;
+    font-size: 13px;
+    
+}
+nav ul li ul{
+   display:none;
+   position: absolute;
+   background-color: saddlebrown;
+   overflow-y: scroll ;
+   height: 120px;
+}
+nav ul li:hover ul{
+    display:block;
+
+}
+.nav-btns{
+    width: 30%;
+    font-size: 20px;
+    margin-left:350px;
+    padding-left: 50px;
+    float:right;
+    margin-top: 20px;
+}
+
+.btn-nav-i{
+    color: white;
+    float: right;
+    padding-right: 1vh;
+    transition: 0.4s;
+    background-color: black;
+}
+
+.btn-nav-i:hover{
+    color: #db5dab;
+}
+
+.card-wrapper{
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 3vh;
+    padding-top: 45vh;
+}
+img{
+    width: 100%;
+    display: block;
+}
+/* .product-imgs{
+    width: auto;
+    height: 700px;
+    overflow: hidden;
+}
+.product-content{
+    padding: 2rem 1rem;
+    background-color: black;
+    height: 700px;
+} */
+.img-display{
+    overflow: hidden;
+    display: flexbox;
+}
+.img-showcase{
+    display: flex;
+    flex:1;
+    width: 100%;
+    transition: all 0.5s ease;
+}
+.img-showcase img{
+    min-width: 100%;
+}
+.img-select{
+    display: flex;
+    justify-content: center;
+}
+.img-item{
+    margin: 0.3rem;
+}
+.img-item:nth-child(1),
+.img-item:nth-child(2),
+.img-item:nth-child(3){
+    margin-right: 0;
+}
+.img-item:hover{
+    opacity: 0.8;
+}
+.product-content{
+    padding: 2rem 1rem;
+    background-color: black;
+    width: 450px;
+    max-height: 800px;
+}
+.product-title{
+    font-size: 2rem;
+    text-transform: capitalize;
+    font-weight: 700;
+    position: relative;
+    color: white;
+    margin: 1rem 0;
+}
+.product-title::after{
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 4px;
+    width: 80px;
+    background: white;
+}
+
+.product-rating{
+    color: #ffc107;
+}
+.product-rating span{
+    font-weight: 600;
+    color: #ffffff;
+}
+.product-price{
+    margin: 1rem 0;
+    font-size: 1rem;
+    font-weight: 700;
+    color: white;
+}
+.product-price span{
+    font-weight: 400;
+}
+.price span{
+    color: #ff0000;
+}
+.product-detail h2{
+    text-transform: capitalize;
+    color: white;
+    padding-bottom: 0.6rem;
+}
+.product-detail p{
+    font-size: 0.9rem;
+    padding: 0.3rem;
+    opacity: 0.8;
+    color: white;
+    text-align: justify;
+}
+.product-detail ul{
+    margin: 1rem 0;
+    font-size: 0.9rem;
+}
+.product-detail ul li{
+    margin: 0;
+    list-style: none;
+    background: url("https://e7.pngegg.com/pngimages/270/706/png-clipart-check-mark-computer-icons-green-tick-mark-angle-text.png") left center no-repeat;
+    background-size: 18px;
+    padding-left: 1.7rem;
+    margin: 0.4rem 0;
+    font-weight: 600;
+    opacity: 0.9;
+    color: white;
+}
+.product-detail ul li span{
+    font-weight: 400;
+}
+.purchase-info{
+    margin: 1.5rem 0;
+}
+.purchase-info input,
+.purchase-info .btn{
+    border: 1.5px solid #ddd;
+    border-radius: 25px;
+    text-align: center;
+    padding: 0.45rem 0.8rem;
+    outline: 0;
+    margin-right: 0.2rem;
+    margin-bottom: 1rem;
+}
+.purchase-info input{
+    width: 60px;
+}
+.purchase-info .btn{
+    cursor: pointer;
+    color: #fff;
+}
+.purchase-info .btn:first-of-type{
+    background: #256eff;
+}
+
+.purchase-info .btn:hover{
+    opacity: 0.9;
+}
+@media screen and (min-width: 992px){
+    .card{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 2vh;
+    }
+    .card-wrapper{
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .product-imgs{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .product-content{
+        padding-top: 0;
+    }
+}
+header{
+    height: 100vh;
+    width: 100%;
+}
+
+nav{
+    background-image: url('Border1.png');
+    height: 20vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.logo{
+    width: 30vh;
+    padding-left: 1vh;
+    color: white;
+}
+
+.list-items{
+    display: flex;
+    list-style:none;
+    width: 100%;
+    justify-content: space-around;
+}
+
+.list-items li{
+    padding: 0.6vh;
+}
+
+.link{
+    text-decoration: none;
+    font-weight: bold;
+    color: white;
+    font-size: 13px;
+    transition: 0.4s;
+    background-color: black;
+}
+
+.link:hover{
+    color: #db5dab;
+}
+
+.nav-btns{
+    width: 30%;
+    font-size: 20px;
+}
+
+.btn-nav-i{
+    color: white;
+    float: right;
+    padding-right: 1vh;
+    transition: 0.4s;
+    background-color: black;
+}
+
+.btn-nav-i:hover{
+    color: #db5dab;
+}

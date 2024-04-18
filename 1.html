@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Checkout_Page</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="check.css">
+<meta name="robots" content="noindex,follow" />
+</head>
+<body>
+
+<div class="checkout-panel">
+    <div class="panel-body">
+      <h2 class="title">Checkout</h2>
+
+      <div class="progress-bar">
+        <div class="step active"></div>
+        <div class="step active"></div>
+        <div class="step"></div>
+        <div class="step"></div>
+      </div>
+
+      <div class="payment-method">
+        <label for="card" class="method card">
+          <div class="card-logos">
+            <img src="img/visa_logo.png"/>
+            <img src="img/mastercard_logo.png"/>
+          </div>
+
+          <div class="radio-input">
+            <input id="card" type="radio" name="payment">
+            Pay Rs. 7990 with credit card
+          </div>
+        </label>
+
+        <label for="paypal" class="method paypal">
+          <img src="img/paypal_logo.png"/>
+          <div class="radio-input">
+            <input id="paypal" type="radio" name="payment">
+            Pay Rs. 7990 with PayPal
+          </div>
+        </label>
+      </div>
+
+      <div class="input-fields">
+        <div class="column-1">
+          <label for="cardholder">Cardholder's Name</label>
+          <input type="text" id="cardholder" />
+
+          <div class="small-inputs">
+            <div>
+              <label for="date">Valid thru</label>
+              <input type="text" id="date" placeholder="MM / YY" />
+            </div>
+
+            <div>
+              <label for="verification">CVV / CVC *</label>
+              <input type="password" id="verification"/>
+            </div>
+          </div>
+
+        </div>
+        <div class="column-2">
+          <label for="cardnumber">Card Number</label>
+          <input type="password" id="cardnumber"/>
+
+          <span class="info">* CVV or CVC is the card security code, unique three digits number on the back of your card separate from its number.</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="panel-footer">
+      <button class="btn back-btn">Back</button>
+      <button class="btn next-btn">Next Step</button>
+      <button onclick="myFunction()">Next Step</button>
+
+  <script>
+  function myFunction() {
+  alert("I am an alert box!");
+}
+</script>
+    </div>
+
+    <!------------footer ------------->
+
+    <footer class="footer">
+     <link rel="stylesheet" href="footer.css"> 
+     <div class="container">
+        <div class="row">
+           <div class="footer-col">
+      <h4>Stri</h4>
+       <ul>
+        <li><a href="#">about us</a></li>
+        <li><a href="#">our services</a></li>
+        <li><a href="#">privacy policy</a></li>
+        <li><a href="#">payment details</a></li>
+       </ul>
+       </div> 
+       <div class="footer-col">
+        <h4>Featured</h4>
+         <ul>
+          <li><a href="#">Dresses and Jumpsuits</a></li>
+          <li><a href="#">Sarees</a></li>
+          <li><a href="#">Kurtis and kurta sets</a></li>
+          <li><a href="#">Ethnic wear</a></li>
+        <li><a href="#">Co-ords</a></li>
+        <li><a href="#">Shawls and dupatta(stoles)</a></li>
+         </ul>
+         </div> 
+         <div class="footer-col">
+          <h4>Contact us</h4>
+           <ul>
+            <li><a href="#">Email-stri@gmail.com</a></li>
+            <li><a href="#">Phone-874298642</a></li>
+            <li><a href="#">Address-Anna nagar ,chennai</a></li>
+            </ul>
+           </div> 
+           <div class="footer-col">
+            <h4>Follow us</h4>
+             <u1>
+            <div class="social-links" >
+               <a href="#" class="fa fa-facebook"></a>
+               <a href="#" class="fa fa-twitter"></a>
+               <a href="#" class="fa fa-instagram"></a>
+               <a href="#" class="fa fa-pinterest"></a>
+             </ul>
+             </div> 
+          </div>
+     </div>
+  </footer>
+  </div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <script src="check_script.js">
+  </script>
+     
+</body>
+</html>
